@@ -165,11 +165,54 @@ section {
 .process-image { flex: 1; }
 .process-text { flex: 1; }
 
-/* Testimonials Section */
+/* --- Testimonials Section --- */
 #testimonials {
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
     text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Hiển thị 3 cột trên máy tính */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial blockquote {
+    margin: 0;
+    font-style: italic;
+    font-size: 1rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-style: normal;
+}
+
+/* Trong phần RESPONSIVE @media (max-width: 768px) */
+/* Hãy thêm đoạn mã này vào bên trong nó */
+.testimonial-grid {
+    grid-template-columns: 1fr; /* Hiển thị 1 cột trên điện thoại */
 }
 blockquote {
     font-size: 1.2rem;
@@ -270,3 +313,4 @@ footer {
         width: 100%;
     }
 }
+
