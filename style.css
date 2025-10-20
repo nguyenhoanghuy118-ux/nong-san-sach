@@ -1,0 +1,221 @@
+/* --- Global Styles --- */
+:root {
+    --primary-color: #2E7D32; /* Green */
+    --secondary-color: #FFC107; /* Yellow */
+    --text-color: #333;
+    --bg-color: #F9F9F9;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* --- Header --- */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: var(--primary-color);
+}
+
+.nav-cta {
+    background: var(--primary-color);
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+/* --- Hero Section --- */
+#hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+/* --- Features Section --- */
+#features {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* --- Products Section --- */
+#products {
+    background: var(--bg-color);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: translateY(-10px);
+}
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-card h4 {
+    margin: 1rem 0 0.5rem;
+}
+.price {
+    color: var(--primary-color);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+/* --- Process Section --- */
+#process {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 60px 0;
+}
+.process-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.process-text { flex: 1; }
+
+/* --- Testimonials --- */
+#testimonials {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+/* --- Footer --- */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+    /* --- General Adjustments --- */
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    
+    /* --- Header & Navigation --- */
+    header nav {
+        flex-direction: column; /* Xếp logo và menu theo chiều dọc */
+        gap: 1rem;
+    }
+
+    header ul {
+        padding: 0;
+        gap: 1.5rem; /* Giảm khoảng cách giữa các mục menu */
+    }
+
+    /* --- Sections --- */
+    #hero {
+        padding: 60px 0;
+    }
+
+    #features, #process {
+        flex-direction: column; /* Các mục xếp chồng lên nhau */
+        gap: 2rem;
+        padding: 40px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr; /* Mỗi sản phẩm chiếm 1 hàng */
+    }
+
+    #process .process-image {
+        order: -1; /* Đưa hình ảnh lên trước phần chữ */
+    }
+}

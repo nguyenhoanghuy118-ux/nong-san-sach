@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông Sản Sạch - Tinh Hoa Từ Đất Mẹ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="images/logo.png" alt="Logo Nông Sản Sạch"></a>
+            <ul>
+                <li><a href="#features">Đặc Điểm</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#process">Quy Trình</a></li>
+                <li><a href="#contact" class="cta-button nav-cta">Liên Hệ Ngay</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Rau Củ Tươi Sạch, An Lành Tới Mọi Nhà</h1>
+                <p>Sản phẩm 100% hữu cơ, được vun trồng bằng tình yêu và trách nhiệm. Đặt hàng ngay để cảm nhận sự khác biệt!</p>
+                <a href="#products" class="cta-button">Xem Sản Phẩm</a>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <div class="feature-item">
+                <h3>✅ 100% Hữu Cơ</h3>
+                <p>Không thuốc trừ sâu, không hóa chất độc hại.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🚚 Giao Hàng Nhanh</h3>
+                <p>Nhận rau củ tươi ngon trong vòng 24 giờ.</p>
+            </div>
+            <div class="feature-item">
+                <h3>🌱 Nguồn Gốc Rõ Ràng</h3>
+                <p>Truy xuất nguồn gốc từ nông trại đến tận tay bạn.</p>
+            </div>
+        </section>
+
+        <section id="products">
+            <div class="container">
+                <h2>Sản Phẩm Nổi Bật</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="images/product1.png" alt="Cà Chua Hữu Cơ">
+                        <h4>Cà Chua Hữu Cơ</h4>
+                        <p class="price">55.000 VNĐ / kg</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product2.png" alt="Rau Xà Lách">
+                        <h4>Rau Xà Lách</h4>
+                        <p class="price">40.000 VNĐ / kg</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/product3.png" alt="Cà Rốt Baby">
+                        <h4>Cà Rốt Baby</h4>
+                        <p class="price">60.000 VNĐ / kg</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="container">
+            <div class="process-image">
+                <img src="images/farm.jpg" alt="Quy trình trồng trọt">
+            </div>
+            <div class="process-text">
+                <h2>Từ Nông Trại Đến Bàn Ăn</h2>
+                <p>Chúng tôi kiểm soát chặt chẽ toàn bộ quy trình: từ việc chọn lựa hạt giống, chăm sóc đất, vun trồng theo phương pháp hữu cơ cho đến khâu thu hoạch và đóng gói. Tất cả vì một bữa ăn an toàn và bổ dưỡng cho gia đình bạn.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+                <div class="testimonial">
+                    <blockquote>"Rau củ rất tươi và ngọt, tôi hoàn toàn yên tâm khi cho cả gia đình sử dụng. Sẽ tiếp tục ủng hộ!"</blockquote>
+                    <cite>- Chị An, Quận 3</cite>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>Đặt Hàng Ngay Hôm Nay!</h3>
+            <p>Liên hệ với chúng tôi qua hotline hoặc ghé thăm cửa hàng.</p>
+            <p><strong>Hotline:</strong> 0904977386</p>
+            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<footer id="contact">
+    <div class="container">
+        <h3>Gửi Lời Nhắn Cho Chúng Tôi</h3>
+        <p>Bạn có câu hỏi hoặc muốn đặt hàng số lượng lớn? Hãy điền vào biểu mẫu dưới đây.</p>
+        
+        <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Tên của bạn" required>
+                <input type="email" name="email" placeholder="Email của bạn" required>
+            </div>
+            <textarea name="message" rows="6" placeholder="Nội dung lời nhắn..." required></textarea>
+            <button type="submit" class="cta-button">Gửi Lời Nhắn</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Hotline:</strong> 0904977386</p>
+            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
+        </div>
+    </div>
+</footer>
+</html>
