@@ -48,19 +48,19 @@
         <section id="products">
             <div class="container">
                 <h2>Sản Phẩm Nổi Bật</h2>
-                <div class="images/product-grid">
+                <div class="product-grid">
                     <div class="product-card">
-                        <img src="product1.png" alt="Cà Chua Hữu Cơ">
+                        <img src="images/product1.jpg" alt="Cà Chua Hữu Cơ">
                         <h4>Cà Chua Hữu Cơ</h4>
                         <p class="price">55.000 VNĐ / kg</p>
                     </div>
                     <div class="product-card">
-                        <img src="images/product2.png" alt="Rau Xà Lách">
+                        <img src="images/product2.jpg" alt="Rau Xà Lách">
                         <h4>Rau Xà Lách</h4>
                         <p class="price">40.000 VNĐ / kg</p>
                     </div>
                     <div class="product-card">
-                        <img src="images/product3.png" alt="Cà Rốt Baby">
+                        <img src="images/product3.jpg" alt="Cà Rốt Baby">
                         <h4>Cà Rốt Baby</h4>
                         <p class="price">60.000 VNĐ / kg</p>
                     </div>
@@ -87,40 +87,29 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer id="contact">
         <div class="container">
-            <h3>Đặt Hàng Ngay Hôm Nay!</h3>
-            <p>Liên hệ với chúng tôi qua hotline hoặc ghé thăm cửa hàng.</p>
-            <p><strong>Hotline:</strong> 0904977386</p>
-            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
+            <h3>Gửi Lời Nhắn Cho Chúng Tôi</h3>
+            <p>Bạn có câu hỏi hoặc muốn đặt hàng số lượng lớn? Hãy điền vào biểu mẫu dưới đây.</p>
+            
+            <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Tên của bạn" required>
+                    <input type="email" name="email" placeholder="Email của bạn" required>
+                </div>
+                <textarea name="message" rows="6" placeholder="Nội dung lời nhắn..." required></textarea>
+                <button type="submit" class="cta-button">Gửi Lời Nhắn</button>
+            </form>
+    
+            <div class="contact-info">
+                <p><strong>Hotline:</strong> 0904977386</p>
+                <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-<footer id="contact">
-    <div class="container">
-        <h3>Gửi Lời Nhắn Cho Chúng Tôi</h3>
-        <p>Bạn có câu hỏi hoặc muốn đặt hàng số lượng lớn? Hãy điền vào biểu mẫu dưới đây.</p>
-        
-        <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Tên của bạn" required>
-                <input type="email" name="email" placeholder="Email của bạn" required>
-            </div>
-            <textarea name="message" rows="6" placeholder="Nội dung lời nhắn..." required></textarea>
-            <button type="submit" class="cta-button">Gửi Lời Nhắn</button>
-        </form>
-
-        <div class="contact-info">
-            <p><strong>Hotline:</strong> 0904977386</p>
-            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
-        </div>
-    </div>
-</footer>
-
 </html>
-
