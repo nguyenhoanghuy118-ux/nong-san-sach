@@ -49,17 +49,26 @@
             <div class="container">
                 <h2>Sản Phẩm Nổi Bật</h2>
                 <div class="product-grid">
-                    <div class="product-card">
+                    <div class="product-card"
+                         data-title="Cà Chua Hữu Cơ"
+                         data-img="images/product1.jpg"
+                         data-description="Giống cà chua hữu cơ được trồng theo tiêu chuẩn VietGAP, không sử dụng thuốc trừ sâu. Quả cà chua mọng nước, vị ngọt thanh, giàu vitamin A và C, rất tốt cho sức khỏe và làn da.">
                         <img src="images/product1.jpg" alt="Cà Chua Hữu Cơ">
                         <h4>Cà Chua Hữu Cơ</h4>
                         <p class="price">55.000 VNĐ / kg</p>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card"
+                         data-title="Rau Xà Lách"
+                         data-img="images/product2.jpg"
+                         data-description="Xà lách tươi xanh được trồng thủy canh, đảm bảo độ sạch và giữ trọn vẹn dinh dưỡng. Lá rau giòn, ngọt, thích hợp cho các món salad, ăn kèm hoặc cuốn.">
                         <img src="images/product2.jpg" alt="Rau Xà Lách">
                         <h4>Rau Xà Lách</h4>
                         <p class="price">40.000 VNĐ / kg</p>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card"
+                         data-title="Cà Rốt Baby"
+                         data-img="images/product3.jpg"
+                         data-description="Cà rốt baby có kích thước nhỏ, vị ngọt đậm đà và giòn hơn so với cà rốt thường. Sản phẩm được trồng hữu cơ, không chất kích thích tăng trưởng, an toàn cho cả trẻ nhỏ.">
                         <img src="images/product3.jpg" alt="Cà Rốt Baby">
                         <h4>Cà Rốt Baby</h4>
                         <p class="price">60.000 VNĐ / kg</p>
@@ -78,33 +87,33 @@
             </div>
         </section>
 
-       <section id="testimonials">
-    <div class="container">
-        <h2>Khách Hàng Nói Gì Về Chúng Tôi</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <blockquote>"Rau củ rất tươi và ngọt, tôi hoàn toàn yên tâm khi cho cả gia đình sử dụng. Sẽ tiếp tục ủng hộ!"</blockquote>
-                <cite>- Chị Lan Anh, Quận 1</cite>
+        <section id="testimonials">
+            <div class="container">
+                <h2>Khách Hàng Nói Gì Về Chúng Tôi</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial">
+                        <blockquote>"Rau củ rất tươi và ngọt, tôi hoàn toàn yên tâm khi cho cả gia đình sử dụng. Sẽ tiếp tục ủng hộ!"</blockquote>
+                        <cite>- Chị Lan Anh, Quận 1</cite>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>"Giao hàng rất nhanh, rau củ được đóng gói cẩn thận. Mình rất thích dịch vụ của shop."</blockquote>
+                        <cite>- Anh Minh, Gò Vấp</cite>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>"Sản phẩm chất lượng, đúng chuẩn hữu cơ. Từ khi dùng nông sản ở đây, bữa ăn gia đình mình ngon và an tâm hơn hẳn."</blockquote>
+                        <cite>- Cô Thanh, TP. Thủ Đức</cite>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial">
-                <blockquote>"Giao hàng rất nhanh, rau củ được đóng gói cẩn thận. Mình rất thích dịch vụ của shop."</blockquote>
-                <cite>- Anh Minh, Gò Vấp</cite>
-            </div>
-            <div class="testimonial">
-                <blockquote>"Sản phẩm chất lượng, đúng chuẩn hữu cơ. Từ khi dùng nông sản ở đây, bữa ăn gia đình mình ngon và an tâm hơn hẳn."</blockquote>
-                <cite>- Cô Thanh, TP. Thủ Đức</cite>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
 
     <footer id="contact">
         <div class="container">
             <h3>Gửi Lời Nhắn Cho Chúng Tôi</h3>
             <p>Bạn có câu hỏi hoặc muốn đặt hàng số lượng lớn? Hãy điền vào biểu mẫu dưới đây.</p>
-            
-            <form action="https://formspree.io/f/myznvqar" method="POST" class="contact-form">
+
+            <form action="https://formspree.io/f/your_form_id" method="POST" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Tên của bạn" required>
                     <input type="email" name="email" placeholder="Email của bạn" required>
@@ -112,16 +121,23 @@
                 <textarea name="message" rows="6" placeholder="Nội dung lời nhắn..." required></textarea>
                 <button type="submit" class="cta-button">Gửi Lời Nhắn</button>
             </form>
-    
+
             <div class="contact-info">
                 <p><strong>Hotline:</strong> 0904977386</p>
-                <p><strong>Địa chỉ:</strong> 103 Đường Nguyễn Sinh Cung, Phường cửa Lò, TP. Vinh, Nghệ An</p>
+                <p><strong>Địa chỉ:</strong> 123 Đường ABC, Phường XYZ, TP. Vinh, Nghệ An</p>
             </div>
         </div>
     </footer>
 
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img id="modal-img" src="" alt="Hình ảnh sản phẩm">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
