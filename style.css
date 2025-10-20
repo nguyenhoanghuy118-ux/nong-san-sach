@@ -1,9 +1,10 @@
-/* --- Global Styles --- */
+/* --- CÀI ĐẶT CHUNG & BIẾN MÀU SẮC --- */
 :root {
-    --primary-color: #2E7D32; /* Green */
-    --secondary-color: #FFC107; /* Yellow */
+    --primary-color: #2E7D32; /* Xanh lá cây đậm */
+    --secondary-color: #FFC107; /* Vàng */
     --text-color: #333;
     --bg-color: #F9F9F9;
+    --white-color: #fff;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     margin: 0;
     color: var(--text-color);
     line-height: 1.6;
+    background-color: var(--white-color);
 }
 
 .container {
@@ -23,13 +25,18 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
-/* --- Header --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- HEADER & NAVIGATION --- */
 header {
-    background: #fff;
+    background: var(--white-color);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 header nav {
@@ -47,6 +54,8 @@ header ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 header a {
@@ -60,19 +69,39 @@ header a:hover {
     color: var(--primary-color);
 }
 
-.nav-cta {
-    background: var(--primary-color);
-    color: #fff !important;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+.cta-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* --- Hero Section --- */
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.nav-cta {
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+    padding: 0.5rem 1.5rem;
+}
+
+/* --- CÁC KHU VỰC CHÍNH (SECTIONS) --- */
+section {
+    padding: 60px 0;
+}
+
+/* Hero Section */
 #hero {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-banner.jpg');
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     padding: 100px 0;
 }
@@ -82,48 +111,31 @@ header a:hover {
     margin-bottom: 1rem;
 }
 
-.cta-button {
-    background: var(--secondary-color);
-    color: var(--text-color);
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 700;
-    display: inline-block;
-    margin-top: 1rem;
-    transition: transform 0.3s;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-}
-
-/* --- Features Section --- */
+/* Features Section */
 #features {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding: 60px 0;
+    gap: 2rem;
 }
 
-/* --- Products Section --- */
+/* Products Section */
 #products {
-    background: var(--bg-color);
-    padding: 60px 0;
+    background-color: var(--bg-color);
     text-align: center;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .product-card {
-    background: #fff;
+    background: var(--white-color);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     overflow: hidden;
     transition: transform 0.3s;
 }
@@ -132,7 +144,7 @@ header a:hover {
 }
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
 }
 .product-card h4 {
@@ -144,24 +156,19 @@ header a:hover {
     padding-bottom: 1rem;
 }
 
-/* --- Process Section --- */
+/* Process Section */
 #process {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 60px 0;
+    gap: 3rem;
 }
-.process-image img {
-    max-width: 100%;
-    border-radius: 10px;
-}
+.process-image { flex: 1; }
 .process-text { flex: 1; }
 
-/* --- Testimonials --- */
+/* Testimonials Section */
 #testimonials {
-    background: var(--primary-color);
-    color: #fff;
-    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-align: center;
 }
 blockquote {
@@ -176,46 +183,90 @@ cite {
     font-weight: 700;
 }
 
-/* --- Footer --- */
+/* --- FOOTER & CONTACT FORM --- */
 footer {
-    background: #333;
-    color: #fff;
+    background-color: #333;
+    color: #eee;
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
-/* --- Responsive Styles --- */
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    gap: 1rem;
+}
+.form-group input {
+    width: 50%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.contact-info {
+    margin-top: 3rem;
+    border-top: 1px solid #555;
+    padding-top: 2rem;
+    opacity: 0.8;
+}
+
+/* ############################################# */
+/* ### CSS TỐI ƯU CHO ĐIỆN THOẠI (RESPONSIVE) ### */
+/* ############################################# */
 @media (max-width: 768px) {
-    /* --- General Adjustments --- */
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    
-    /* --- Header & Navigation --- */
+    section { padding: 40px 0; }
+
+    /* --- Navigation cho điện thoại --- */
     header nav {
-        flex-direction: column; /* Xếp logo và menu theo chiều dọc */
+        flex-direction: column;
         gap: 1rem;
     }
-
     header ul {
-        padding: 0;
-        gap: 1.5rem; /* Giảm khoảng cách giữa các mục menu */
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    /* --- Sections --- */
-    #hero {
-        padding: 60px 0;
-    }
-
+    
+    /* --- Bố cục cho điện thoại --- */
     #features, #process {
-        flex-direction: column; /* Các mục xếp chồng lên nhau */
+        flex-direction: column;
         gap: 2rem;
-        padding: 40px 0;
     }
 
     .product-grid {
-        grid-template-columns: 1fr; /* Mỗi sản phẩm chiếm 1 hàng */
+        grid-template-columns: 1fr; /* 1 cột */
     }
 
     #process .process-image {
-        order: -1; /* Đưa hình ảnh lên trước phần chữ */
+        order: -1; /* Đưa hình ảnh lên trên phần chữ */
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+    .form-group input {
+        width: 100%;
     }
 }
